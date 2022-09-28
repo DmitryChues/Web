@@ -1,0 +1,111 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+body {
+	padding: 30px;
+	/* background: url('../img/bg.jpg') center no-repeat fixed; */
+}
+
+/* .block {
+	background: #18b5a4;
+	background: rgba(129, 45, 211, 0,2);
+
+	height: 300px;
+	border-radius: 15px;
+	box-shadow: 0 0 10px #000;
+} */
+
+/* .block {
+	background: url('../img/bg_repeat.jpg') no-repeat;
+	background: url('../img/bg_repeat.jpg') repeat-x;
+	background: url('../img/bg_repeat.jpg') repeat-y;
+	background: url('../img/bg_repeat.jpg') space;
+	background: url('../img/bg_repeat.jpg') round;
+
+	height: 300px;
+	border-radius: 15px;
+	box-shadow: 0 0 10px #000;
+} */
+
+/* .block {
+	background: url('../img/avatar_3.jpg') 100px 50px no-repeat;
+
+	height: 300px;
+	border-radius: 15px;
+	box-shadow: 0 0 10px #000;
+} */
+
+/* .block {
+	background: white;
+
+	height: 300px;
+	border-radius: 15px;
+	box-shadow: 0 0 10px #000;
+} */
+
+/* .block {
+	background: url('../img/avatar_3.jpg') 0 0/100% auto no-repeat;
+	background: url('../img/avatar_3.jpg') 0 0/contain no-repeat;
+	background: url('../img/avatar_3.jpg') 50%/cover no-repeat;
+	
+	height: 300px;
+	border-radius: 15px;
+	box-shadow: 0 0 10px #000;
+} */
+
+.block {
+	background: url('../img/avatar_3.jpg') 50%/50px no-repeat,
+	url('../img/avatar.jpg') 100px 20px no-repeat,
+	url('../img/bg.jpg') 50%/cover no-repeat;
+
+	height: 300px;
+	border-radius: 15px;
+	box-shadow: 0 0 10px #000;
+}
+
+.list {
+	margin: 0px 0px 50px 0px;
+}
+.list li{
+	font-size: 24px;
+	margin: 0 0 15px 0;
+	background: url('../img/icons/li.svg') left 5px no-repeat;
+	padding: 0 0 0 30px;
+}
