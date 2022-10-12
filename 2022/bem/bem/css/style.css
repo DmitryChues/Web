@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "Lato";
+}
+
+.about__body {
+  max-width: 823px;
+  margin: 0 auto;
+}
+.about__header {
+  margin: 0 0 65px 0;
+}
+.about__title {
+  margin: 0 0 30px 0;
+}
+.about__text {
+  max-width: 668px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 300;
+  color: #868585;
+}
+.about__row {
+  display: flex;
+  font-size: 0;
+  margin: 0 -15px;
+}
+.about__column {
+  padding: 0 15px;
+  flex: 0 0 33.333%;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  position: relative;
+  text-align: center;
+  padding: 0 0 30px 0;
+}
+.title:after {
+  content: "";
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  background: #000;
+  left: 50%;
+  margin: 0 0 0 -25px;
+}
+
+.item-about__icon {
+  border-radius: 50%;
+  border: 2px solid #f1f1f1;
+  width: 92px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 40px;
+}
+.item-about__title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 0 35px 0;
+}
+.item-about__text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 300;
+  color: #868585;
+}
