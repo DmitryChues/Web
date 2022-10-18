@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "Lato";
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  font-size: 0;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.mainblock {
+  background: #606d93;
+  flex: 1 1 auto;
+  position: relative;
+  display: flex;
+  font-size: 0;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 0;
+}
+.mainblock__content {
+  flex: 1 1 auto;
+}
+.mainblock__content .container {
+  height: 100%;
+  display: flex;
+  font-size: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainblock__text {
+  color: #fff;
+  position: relative;
+  padding: 0 0 45px 0;
+  margin: 30px 0;
+}
+.mainblock__text::after {
+  content: "";
+  width: 105px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  margin: 0 0 0 -52.5px;
+  bottom: 0;
+}
+.mainblock__title {
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin: 0 0 10px 0;
+}
+.mainblock__subtitle {
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+}
+.mainblock__footer {
+  display: inline-flex;
+  flex-direction: column;
+}
+.mainblock__btn {
+  margin: 0 0 60px 0;
+}
+.btn {
+  display: inline-block;
+  height: 47px;
+  padding: 0 40px;
+  line-height: 44px;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+}
+.btn_w {
+  color: #fff;
+  border: 1px solid #fff;
+}
