@@ -1,8 +1,8 @@
-document.querySelector('.wrapper').classList.add('loaded');
-document.querySelector('.icon-menu').click(function (event) {
-	document.querySelector(this).classList.toggle('active');
-	document.querySelector('.menu__body').classList.toggle('active');
-	document.querySelector('body').classList.toggle('lock');
+$(document).ready(function () {
+	$('.icon-menu').click(function (event) {
+		$('.icon-menu,.menu__body').toggleClass('active');
+		$('body').toggleClass('lock')
+	});
 });
 
 function ibg() {
