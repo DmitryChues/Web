@@ -1,0 +1,30 @@
+@import 'nullstyle.scss';
+
+.button {
+	text-decoration: none;
+	display: inline-block;
+	line-height: 60px;
+	padding: 0 30px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 18px;
+	border-radius: 10px;
+	top: 0;
+	position: relative;
+	&_1 {
+		color: #fff;
+		background: #5e5373;
+		box-shadow: 0 5px 0px #3c354a;
+		transition-duration: 0.5s, 100ms, 100ms;
+		transition-property: background-color, top, box-shadow;
+		transition-delay: 0s, 0.5s, 0.5s;
+		transition-timing-function: ease;
+		// transition: property duration function delay
+		// transition: all 1s ease 0s;
+		&:hover {
+			top: 2px;
+			box-shadow: 0 3px 0px #3c354a;
+			background-color: #18b5a4;
+		}
+	}
+}
