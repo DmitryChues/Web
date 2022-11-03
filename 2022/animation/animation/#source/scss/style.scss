@@ -1,0 +1,55 @@
+@import 'nullstyle.scss';
+
+.wrapper {
+	background-color: #333;
+	height: 100%;
+}
+.content {
+	padding: 50px;
+	&__circle {
+		width: 100px;
+		height: 100px;
+		background-color: #fff;
+		border-radius: 50%;
+		position: relative;
+		left: 0;
+		// animation-name: white-circle;
+		// animation-duration: 2s;
+		// animation-timing-function: linear;
+		// animation-iteration-count: 7;
+		// animation-direction: alternate;
+		// animation-delay: 2s;
+		// animation-fill-mode: forwards;
+
+		// animation: name duration timing-function delay iteration-count direction fill-mode;
+		animation: white-circle 2s linear 7 alternate 2s forwards, red-circle 5s ease infinite alternate 2s forwards;
+	}
+	
+	&:hover &__circle{
+		animation-play-state: paused;
+	}
+}
+
+@keyframes white-circle {
+	0% {
+		left: 0;
+	}
+	50% {
+		border-radius: 0;
+	}
+	100% {
+		left: 500px;
+	}
+}
+
+@keyframes red-circle {
+	0% {
+		background-color: #fff;
+	}
+	50% {
+		background-color: red;
+	}
+	100% {
+		background-color: #fff;
+	}
+}
