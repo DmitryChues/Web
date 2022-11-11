@@ -7,6 +7,7 @@ body {
 	color: #252B42;
 	font-size: 14px;
 	font-weight: 500;
+	background: #FAFAFA;
 }
 
 .wrapper {
@@ -106,6 +107,35 @@ body {
 		z-index: 2;
 		margin: -111px 0 0 0;
 	}
+	&__advantages {
+	}
+}
+
+// --Header-block-------------------------------------------------
+
+.header-block {
+	text-align: center;
+	&__title {
+		font-weight: 700;
+		font-size: 40px;
+		line-height: calc(57/40*100%);
+		letter-spacing: 0.2px;
+		&:not(:last-child) {
+			margin: 0 0 10px 0;
+		}
+		@media (max-width: 992px) {
+			font-size: 35px;
+		}
+		@media (max-width: 767px) {
+			font-size: 30px;
+		}
+	}
+
+	&__sub-title {
+		line-height: 143%;
+		letter-spacing: 0.2px;
+		color: #737373;
+	}
 }
 
 // --Main-block-------------------------------------------------
@@ -120,6 +150,9 @@ body {
 		max-width: 400px;
 		@media (max-width:992px) {
 			padding: 120px 0 191px 0;
+		}
+		@media (max-width:479px) {
+			padding: 120px 0 170px 0;
 		}
 	}
 
@@ -200,18 +233,37 @@ body {
 // --Services-block-----------------------------------------------
 
 .services {
-
 	&__container {
 	}
 
 	&__body {
-		display: flex;
-		margin: 0 -15px;
+		
+		@media (min-width: 670px) {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 -15px;
+		}
 	}
 
 	&__column {
 		flex: 0 1 33.333%;
-		padding: 0 15px;
+		
+		@media (max-width: 992px) {
+			flex: 0 1 50%;
+			&:last-child {
+				flex: 1 1 auto;
+			}
+			&:not(:last-child) {
+				margin: 0 0 30px 0;
+			}
+		}
+		@media (min-width: 670px) {
+			padding: 0 15px;
+		}
+		// @media (max-width: 670px) {
+		// 	flex: 0 1 100%;
+		// 	margin: 0 0 30px 0;
+		// }
 	}
 
 	&__item {
@@ -219,6 +271,9 @@ body {
 		box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
 		background: #fff;
 		padding: 35px;
+		@media (max-width: 479px) {
+			padding: 20px;
+		}
 	}
 }
 
@@ -254,6 +309,73 @@ body {
 	}
 	}
 
+// --Services-block-----------------------------------------------
+
+.advantages {
+	padding: 80px;
+	@media (max-width: 992px) {
+		padding: 50px;
+	}
+	@media (max-width: 767px) {
+		padding: 30px;
+	}
+	&__header {
+		margin: 0 0 50px 0;
+		@media  (max-width: 767px) {
+			margin: 0 0 25px 0;
+		}
+	}
+
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px -30px;
+	}
+
+	&__column {
+		padding: 0 15px;
+		margin: 0 0 30px 0;
+		flex: 0 1 25%;
+		@media (max-width: 1100px) {
+			flex: 0 1 50%;
+		}
+		@media (max-width: 600px) {
+			flex: 0 1 100%;
+		}
+	}
+
+	&__item {
+		background: #fff;
+		padding: 30px;
+		text-align: center;
+		font-weight: 700;
+		& > *:not(:last-child){
+			margin: 0 0 10px 0;
+		}
+	}
+
+	&__icon {
+		height: 48px;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+
+	&__value {
+		font-size: 40px;
+		line-height: 142%;
+		letter-spacing: 0.2px;
+		color: #252B42;
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 150%;
+		text-align: center;
+		letter-spacing: 0.1px;
+		color: #737373;
+	}
+}
 
 
 // --Подвал-----------------------------------------------
